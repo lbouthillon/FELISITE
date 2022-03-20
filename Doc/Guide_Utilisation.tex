@@ -1,0 +1,188 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+%\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc} 
+\usepackage[french]{babel}
+
+
+\usepackage{graphicx} 
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{stmaryrd}
+\usepackage{siunitx}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{array}
+\usepackage{epsfig}
+\usepackage{capt-of}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usetikzlibrary{babel}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usetikzlibrary{calc}
+\geometry{hmargin=2cm,vmargin=3cm}
+
+
+\title{Guide d'utilisation du site du Killer V 3.0}
+\author{Bouteiller Antoine}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=0.7\linewidth]{img/red}
+\end{figure} 
+
+\newpage
+\tableofcontents
+\section{Introduction}
+Bonjour et bienvenue dans l'introduction de ce guide d'utilisation. Si tu lis ces lignes c'est que tu t'es fais tracos (Bravo à toi) par ton VP Killer ou par ton WP Killer (coucou toi). Tu ne dois lire ce guide que si tu as de superbes permanences au lobby du killer (Mais par contre il faut lire ce guide CORRECTEMENT et en ENTIER ou bien je te défonce (avec toute amitié)). Si jamais tu as la moindre question ou report de bug sur le site, il faut ping \href{https://t.me/Kalva_Grost0ny}{Kalva} au plus vite.
+
+\section{Préparation}
+Pour pouvoir gérer le site du killer, il faut avoir des droits Admin ou super-Admin. Pour ce faire:
+\begin{itemize}
+  \item Se connecter sur le site et se créer un compte
+  \item Demander à un Admin de vous faire passer en Admin.
+\end{itemize}
+
+\section{Rôle d'admin}
+Je vais détailler ce que tu peux trouver sur chaque page et les actions à réaliser.
+
+\subsection{Joueurs}
+Sur cette page tu retrouves l'ensemble des joueurs. Tu peux cliquer sur une petite carte pour accéder un profil d'un joueur.
+La recherche te permet de matcher sur le nom, le prénom et le pseudo. Le score des utilisateurs te sera tout le temps affiché.
+
+\subsubsection{Profil}
+Sur la page de profil tu commnce par trouver un résumé des infos du joueur.
+
+\subsubsection{Compétences}
+Tu peux trouver dans cette section les boutons pour que le joueur achête une compétence. Tu trouveras aussi un bouton pour revendre la compétence. Il ne faut utiliser ce dernier que si tu as fais une erreur. Tu ne dois pas toucher manuellement à l'xp du joueur, le cout n xp est calculé automatiquement avec toute les réductions, le prix est affiché avec réduction si tu vois un probleme hésite pas a me ping (Kalva).
+
+\subsubsection{Gestion}
+Dans cette partie tu as d'abord 3 boutons :
+\begin{itemize}
+        \item Uploader une photo : si le joueur n'a pas de photo ou bien qu'il n'est pas reconnaissable, tu peux lui changer sa photo.
+        \item Supprimer le joueur : si le joueur ne veut plus apparaitre sur le site.
+        \item Résurrectionner le joueur (blk, ce mot est très bien): pour permettre au joueur de se remettre dans le jeu
+\end{itemize}
+
+Tu trouveras ensuite un formulaire qui te permet de changer les variables de l'utilisateur.
+Elles sont la en dernier recours si il y a besoin de faire une modif critique, ou pour anjouter des bonus qui ne sont pas implémenté.
+
+\subsection{Équipes}
+Tu retrouves l'ensemble des équipes. La recherche te permet de retrouver une équipe par nom
+
+\subsection{Équipe}
+Tu commences par retrouver un résumé des infos de l'équipe.
+
+\subsubsection{Membres}
+Tu retrouves la liste des membres de l'équipe.
+Tu peux:
+\begin{itemize}
+  \item Cliquer sur la poubelle pour supprimer l'utilisateur de l'équipe
+  \item Cliquer sur la dernière carte pour ajouter un utilisateur à l'équipe
+\end{itemize}
+
+\subsubsection{Gestion}
+Tu retrouves 2 boutons pour
+\begin{itemize}
+  \item Changer la photo de l'équipe
+  \item Supprimer l'équipe
+\end{itemize}
+
+Tu retrouveras ensuite un formulaire qui te permet de changer les variables de l'équipe.
+Elles sont la en dernier recours si il y a besoin de faire une modif critique, ou pour anjouter des bonus qui ne sont pas implémenté.
+
+
+\subsubsection{Compétences/Objets/Achievement}
+Tu peux trouver dans cette section les boutons pour que l'équupes achête une compétence/objet/achievement. Tu trouveras aussi un bouton pour revendre la compétence. Il ne faut utiliser ce dernier que si tu as fais une erreur. Tu ne dois pas toucher manuellement à l'argent de l'équipe.
+
+
+\subsubsection{Cibles}
+Tu peux
+\begin{itemize}
+  \item Supprimer une cible en cliquant sur la poubelle
+  \item Ajouter toutes les cibles manquantes de l'équipe
+  \item Retirer toutes les cibles d'une équipe
+\end{itemize}
+
+\subsubsection{Énigme}
+Tu retrouves la liste des énigmes disponnibles actuellement pour les joueurs. Tu peux
+\begin{itemize}
+  \item Valider l'énigme (tu peux aussi la dévalider mais c'est seulement si tu te trompes)
+  \item Acher un indice (tu peux aussi le revendre mais c'est seulement si tu te trompes)
+\end{itemize}
+Tu retrouveras aussi des boutons que tu dois ABSOLUMENT PAS TOUCHER
+\begin{itemize}
+  \item Supprimer les énigmes de toutes les équipes
+  \item Créer les énigmes de toutes les équipes
+  \item Supprimer les énigmes
+  \item Créer les énigmes
+\end{itemize}
+
+\subsection{Kill}
+Pour Valider un Kill tu dois:
+\begin{enumerate}
+  \item Rentrer un meurtrier
+  \item Rentrer une victime (ex: Lacaf)
+  \item Dans le cas où la victime n'est pas une cible, préciser si c'était un duel
+  \item Rentrer le jour
+  \item Rentrer l'heure
+  \item Rentrer une description
+  \item rentrer les points BONUS
+\end{enumerate}
+
+Quand c'est fait, tu peux vérifier si le kill est valide. Tu vas recevoir un tableau d'information. Lis le attentivement. Certains paramètre rendront un kill impossible. Certains ne le rendront pas mais te demanderont de faire attention. Vérifie bien que tout est correct avant de valier. Si tout te semble bon tu peux valider le kill
+
+\subsection{Gestion}
+Cette page te permet de faire beaucoup de chose mais en tant que simple admin tu ne devrais pas souvent y toucher. Il y a même un joli message d'avertissement pour te le rappeler.
+
+\subsubsection{Cibles}
+Le premier bouton te permet de recréer toutes les cibles et le second te permet de toutes les supprimer. Ces boutons sont utiles au changement de jour car ils permettent un refresh des cibles.
+
+\subsubsection{Résurection}
+Ce bouton te permet de résurrectionner tous les joueurs. Il est pratique au changment de jour pour rez tout le monde et les inclures dans les cibles (il faut donc l'utiliser avant de générer toutes les cibles).
+
+\subsubsection{Énigmes}
+Cette section te permet de rendre disponnible ou indisponnible une énigme
+
+\subsubsection{Envoyer un message}
+Tu peux envoyer un message à toutes les factions ou bien à chacune individuellement.
+
+\subsubsection{Emails des joueurs}
+Tu peux récupérer les emails des joueurs en fonction de leur factions
+
+\subsubsection{Téléphones des joueurs}
+Tu peux récupérer les téléphones des joueurs en fonction de leur factions
+
+\subsubsection{Options}
+Cette section te permet de gérer les options principales du site
+\begin{itemize}
+  \item Score: Ce bouton te permet d'afficher ou de cacher le score pour les joueurs. Ce qui est affiché est le statut actuel
+\end{itemize}
+
+
+
+
+\subsection{Messages}
+Cette page te permet de supprimer un message.
+
+\subsection{Flux de meurtre}
+Cette page te permet d'avoir la liste des kills, le meilleur meutrier et la plus longue série de victime. Elle te permet aussi d'éditer la description d'un kill ou bien de le supprimer.
+
+\subsection{Afk}
+Cette page se compose en 2 parties: les non-afks et les afks.
+\subsubsection{Non-Afk}
+Chaque personne dispose d'un score d'afkaïte. Plus le score est élevé moins on a de chance d'attraper l'afkaïte. Si tu vois une personne au lobby tu peux cliquer sur l'œil. Ça veut dire que tu l'as vu et que son score d'afkaïte augmente donc que la personne est potentiellement pas afk. Tu peux aussi cliquer sur la croix pour déclarer une personne afk. Pour la déclarer AFK tu dois te baser sur son score d'afkaïte.
+
+\subsubsection{Afk}
+Si une personne a été déclarée à tort AFK, il te suffit de cliquer sur le petit bouton vert pour la remettre dans le jeu
+
+
+\end{document}

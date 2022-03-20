@@ -1,0 +1,26 @@
+{
+    "port": 5000,
+    "env": "dev",
+    "admin": [
+        "2017devillezl"
+    ],
+    "bot_token": "ceci est un token",
+    "chan_monitoring_id": 23,
+    "session_secret": "AWITERTERTERTE",
+    "frontUrl": "http://localhost:3000",
+    "backUrl": "http://localhost:5000",
+    "basDir": "/var/www/killer/back",
+    "token_secret": "je suis secret",
+    "oauth": {
+        "client_id": "42",
+        "client_secret": "la maman de lacaf",
+        "accessTokenUri": "https://auth.viarezo.fr/oauth/token",
+        "authorizationUri": "https://auth.viarezo.fr/oauth/authorize",
+        "apiUrl": "https://auth.viarezo.fr/api/user/show/me"
+    },
+    "db": {
+        "name": "killerdb",
+        "user": "killer",
+        "password": "killer"
+    }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "back",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "proxy": "http://localhost:5000",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "babel-eslint": "^10.1.0",
+    "body-parser": "^1.19.0",
+    "connect-busboy": "^0.0.2",
+    "connect-session-sequelize": "^7.1.1",
+    "cors": "^2.8.5",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-react": "^7.25.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "joi": "^17.4.2",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "murmur-hash-js": "^1.0.0",
+    "node-pre-gyp": "^0.17.0",
+    "nodemon": "^2.0.12",
+    "pg": "^8.7.1",
+    "sequelize": "^6.6.5",
+    "underscore": "^1.13.1",
+    "winston": "^3.3.3"
+  },
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.24.2"
+  }
+}

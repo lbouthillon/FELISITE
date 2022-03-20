@@ -1,0 +1,29 @@
+{
+    "port": 5000,
+    "env": "dev",
+    "admin": [
+        "2017devillezl",
+        "2020renep",
+        "2020bouthilll"
+    ],
+    "bot_token": "1744660938:AAFwmpkhmcqyF3Bm7FR1I5d_ESaiTpi2_aw",
+    "chan_monitoring_id": -583000510,
+    "session_secret": "SALUTPETITCOQUINOU",
+    "frontUrl": "http://localhost:3000",
+    "backUrl": "http://localhost:5000",
+    "basDir": "/var/www/killer/back",
+    "token_secret": "LETOKENSECRET",
+    "oauth": {
+        "client_id": "acb89473e7991596b04e71595f8867ac29e5bdb8",
+        "client_secret": "88f42d23638acebcc50cd78e9dc477a9699ad316",
+        "accessTokenUri": "https://auth.viarezo.fr/oauth/token",
+        "authorizationUri": "https://auth.viarezo.fr/oauth/authorize",
+        "apiUrl": "https://auth.viarezo.fr/api/user/show/me"
+    },
+    "db": {
+        "name": "killerdb",
+        "user": "killer",
+        "password": "killer",
+        "ROLES": ["user","moderator","admin"]
+    }
+}
