@@ -3,7 +3,7 @@ import {
   Grid, Sidebar, Menu, Icon,
 } from 'semantic-ui-react';
 import config from '../../config.json';
-import logo from '../../img/jdr.png';
+import logo from '../../img/logo.jpg';
 import Responsive from "semantic-ui-react/dist/commonjs/addons/Responsive";
 
 const urlAccueil = `${config.front_Url}`;
@@ -29,7 +29,7 @@ export default class Navbar extends Component {
     return (
       <div>
         <Responsive as="div" {...Responsive.onlyComputer}>
-          <Grid className="menu" verticalAlign="middle" style={{ height: '70px',background: '#111111', borderBlockColor: 'white'}}>
+          <Grid className="menu" verticalAlign="middle" style={{ height: '60px',background: '#111111', borderBlockColor: 'white'}}>
             <Grid.Column width={3} style={{ padding: 0, height: '60px' }}>
               
               <a id="logolien" href={urlAccueil}><img src={logo} alt="logo" id="logo" /></a>

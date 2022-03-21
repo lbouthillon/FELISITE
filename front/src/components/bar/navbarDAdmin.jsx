@@ -3,7 +3,7 @@ import {
   Grid, Sidebar, Menu, Icon,
 } from 'semantic-ui-react';
 import config from '../../config.json';
-import logo from '../../img/logovictoria.png';
+import logo from '../../img/logo.jpg';
 import Responsive from "semantic-ui-react/dist/commonjs/addons/Responsive";
 
 const urlAccueil = `${config.front_Url}`;

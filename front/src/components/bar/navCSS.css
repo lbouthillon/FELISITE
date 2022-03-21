@@ -1,0 +1,4 @@
+#logo {
+    -webkit-mask-image: radial-gradient(circle at 50% 50%, black 55%, transparent 70%);
+    mask-image: radial-gradient(circle at 50% 50%, black 55%, transparent 70%);
+}

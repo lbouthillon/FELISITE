@@ -3,9 +3,9 @@ import {
   Grid, Sidebar, Menu, Icon,
 } from 'semantic-ui-react';
 import config from '../../config.json';
-import logo from '../../img/jdr.png';
+import logo from '../../img/logo.jpg';
 import Responsive from "semantic-ui-react/dist/commonjs/addons/Responsive";
-
+import "./navCSS.css"
 const urlAccueil = `${config.front_Url}`;
 // const urlUsers = `${config.front_Url}/users/`;
 // const urlTeams = `${config.front_Url}/teams/`;
@@ -39,9 +39,9 @@ export default class NavBar extends Component {
     return (
       <div>
         <Responsive as="div" {...Responsive.onlyComputer} >
-          <Grid className="menu" verticalAlign="middle" style={{ height: '70px', background: '#111111', borderBlockColor: 'white'}}> 
+          <Grid className="menu" verticalAlign="middle" style={{ height: '60px', background: '#111111', borderBlockColor: 'white'}}> 
             <Grid.Column width={2} style={{ padding: 0, height: '60px' }}>
-              <a id="logolien" href={urlAccueil}><img src={logo} alt="logo" id="logo" /></a>
+              <a id="logolien" href={urlAccueil}><img src={logo} alt="logo" id="logo" mask="mask1"/></a>
             </Grid.Column>
             <Grid.Column width={12} textAlign="center" style={{ padding: 0, height: '60px' }}>
               <Grid textAlign="center" style={{ padding: 0, margin: 0, height: '60px' }}>
